@@ -10,6 +10,7 @@ define(
                     color: 'bg-yellow',
                     icon: 'ion-person-add',
                     subject: 'Default Subject',
+                    subtitle: 'More info',
                     stats: '0',
                     link: '/default/link'
                 }
@@ -21,7 +22,7 @@ define(
                 if(this.props.link) {
                     link =
                         <a href={this.props.link} className="small-box-footer">
-                            More info <i className="fa fa-arrow-circle-right"></i>
+                            {this.props.subtitle} <i className="fa fa-arrow-circle-right"></i>
                         </a>;
                 }
 
